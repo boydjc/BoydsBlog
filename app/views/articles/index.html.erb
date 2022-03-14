@@ -10,14 +10,16 @@
 	  	<% unless article.archived? %>
 			<div class="articlePreview">
 				<div class="articleTitle">
-					<%= article.title %>
+					<h1><%= article.title %></h1>
 				</div>
-				<div class="articlePreview">
-					<% if article.body.length < 100 %>
-						<%= article.body %>
-					<% else %>
-						<%= article.body[..100] + "..." %>
-					<% end %>
+				<div class="articleBodyPreview">
+					<p>
+						<% if article.body.length < 100 %>
+							<%= article.body %>
+						<% else %>
+							<%= article.body[..100] + "..." %>
+						<% end %>
+					</p>
 				</div>
 				<div class="seeMoreButton">
 					<%= link_to "See More", article %>

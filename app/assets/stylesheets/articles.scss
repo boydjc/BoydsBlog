@@ -3,28 +3,24 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 #totArtInfo {
-	border: 1px solid #000;
 	display: grid;
-	grid-template-rows: 1.5fr 1fr;
+	grid-template-rows: 1fr 1fr;
 }
 
 #totArtInfo h2 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 2px dotted green;
 }
 
 #totArtInfo h1 {
 	display: flex;
 	align-items: center;
-	padding-left: 20px;
-	border: 1px dashed blue;
+	justify-content: center;
 	font-size: 3rem;
 }
 
 #totArtDis {
-	border: 1px dashed red;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	padding: 10px;
@@ -32,5 +28,34 @@
 }
 
 .articlePreview {
-	border: 2px dashed purple;
+	border: 1px solid black;
+	border-radius: 10px;
+	display: grid;
+	grid-template-rows: 2fr 4fr 1fr;
+	padding: 20px;
+	box-shadow: 0px 1px 3px 1px #003049;
+}
+
+.articleTitle {
+	padding-top: 5px;
+	align-self: center;
+	justify-self: left;
+}
+
+.articleBodyPreview {
+	align-self: center;
+	justify-self: left;
+	font-size: 1.2rem;
+}
+
+.seeMoreButton {
+	justify-self: right;
+}
+
+.seeMoreButton a{
+	border: 1px solid #003049;
+	border-radius: 10px;
+	text-decoration: none;
+	font-size: 1.5rem;
+	padding: 5px;
 }
