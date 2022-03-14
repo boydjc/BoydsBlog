@@ -21,17 +21,20 @@
 
 body {
 	display: grid;
-	grid-template-rows: repeat(3, 1fr);
-	background-color: #003049;
-	color: #EBF8FF;
+	grid-template-rows: 1fr 1fr 2fr;
+	background-color: #EAE2B7;
+	color: #003049;
 }
 
 
 #banner {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-	box-shadow: 1px 1px 5px 2px  #FCBF49;
+	box-shadow: 1px 1px 5px 2px #003049;
 	padding: 0.5rem;
+	background-color: #003049;
+	border-bottom: 1px solid #EAE2B7;
+	color: #EBF8FF;
 }
 
 #siteName {
@@ -61,6 +64,15 @@ body {
 	font-size: 1.5rem;
 	text-decoration: none;
 	color: #FCBF49;
+	padding: 10px 10px 5px 10px;
+	border-radius: 10px;
+	border: 1px solid #FFFFFF;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+#newArticleLink a:hover {
+	background-color: #FCBF49;
+	color: #003049;
 }
 
 #slogan {
