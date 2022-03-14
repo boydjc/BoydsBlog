@@ -14,4 +14,58 @@
  *= require_self
  */
 
-html
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	background-color: #EAE2B7;
+	color: #003049;
+}
+
+#banner {
+	border: 1px solid #000;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#siteName {
+	flex: 3;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 2rem;
+	font-size: 4.5rem;
+}
+
+#slogan {
+	border: 1px dashed blue;
+	flex: 3;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	text-align: center;
+	font-size: 1.5rem;
+	align-self: flex-end;
+}
+
+#newArticleLink {
+	border: 1px solid black;
+	flex: 1;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	text-align: center;
+	align-self: flex-start;
+	padding: 0.7rem;
+}
+
+#newArticleLink a {
+	text-decoration: none;
+}
