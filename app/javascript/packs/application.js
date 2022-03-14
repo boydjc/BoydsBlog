@@ -7,6 +7,7 @@ import "@hotwired/turbo-rails"
 import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import "packs/footer"
 
 Rails.start()
 ActiveStorage.start()
