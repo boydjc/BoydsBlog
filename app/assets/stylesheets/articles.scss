@@ -94,10 +94,9 @@
 }
 
 #articleCont {
-	border: 2px dashed blue;
 	display: grid;
 	grid-template-rows: 1fr 3fr 0.5fr;
-	padding: 20px;
+	padding: 40px 75px 20px 75px;
 }
 
 #articleCont h1 {
@@ -109,16 +108,22 @@
 }
 
 #articleControls {
-	border: 2px dotted red;
 	display: flex;
+	justify-content: space-between;
 	flex-flow: row wrap;
 	align-items: center;
-	justify-content: flex-end;
+}
+
+#backEditButtons {
+	display: flex;
 	gap: 20px;
 }
 
+#deleteButton {
+	display: flex;
+}
+
 #articleControls a {
-	border: 2px dashed purple;
 	font-size: 1.2rem;
 	text-decoration: none;
 	background-color: #003049;

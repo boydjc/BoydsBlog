@@ -6,12 +6,16 @@
 
 		<p><%= @article.body %></p>
 		<div id="articleControls">
-			<%= link_to "Back", root_path %>
-			<%= link_to "Edit", edit_article_path(@article) %></li>
-			<%= link_to "Delete", article_path(@article), data: {
-							  turbo_method: :delete, 
-							  turbo_confirm: "Are you sure?"
-							} %>
+			<div id="backEditButtons">
+				<%= link_to "Back", root_path %>
+				<%= link_to "Edit", edit_article_path(@article) %>
+			</div>
+			<div id="deleteButton">
+				<%= link_to "Delete", article_path(@article), data: {
+								  turbo_method: :delete, 
+								  turbo_confirm: "Are you sure?"
+								} %>
+			</div>
 		</div>	
 	</div>
 	<div id="commentsCont">
