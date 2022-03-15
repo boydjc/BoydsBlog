@@ -34,6 +34,7 @@
 	grid-template-rows: 2fr 4fr 1fr;
 	padding: 20px;
 	box-shadow: 0px 1px 3px 1px #003049;
+	background-color: #F9FAEF;
 }
 
 .articleTitle {
@@ -48,14 +49,28 @@
 	font-size: 1.2rem;
 }
 
-.seeMoreButton {
+.readButton {
 	justify-self: right;
+	width: 100px;
+	display: flex;
 }
 
-.seeMoreButton a{
-	border: 1px solid #003049;
+.readButton a{
+	border: 2px solid #003049;
 	border-radius: 10px;
 	text-decoration: none;
-	font-size: 1.5rem;
-	padding: 5px;
+	font-size: 1.2rem;
+	padding: 5px 5px 2px 5px;
+	box-shadow: 1px 1px 1px #003049;
+	background-color: #003049;
+	color: #EBF8FF;
+	transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+	flex: 1;
+	text-align: center;
+}
+
+.readButton a:hover {
+	background-color: #FCBF49;
+	color: #003049;
+	box-shadow: 1px 1px 1px #EBF8FF;
 }

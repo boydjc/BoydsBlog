@@ -39,12 +39,12 @@ body {
 
 #siteName {
 	display: flex;
-	justify-content: flex-start;
-	padding-left: 20px;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
 	font-size: 4.5rem;
 	letter-spacing: 5px;
+	text-shadow: 2px 2px #000000;
 }
 
 #sloganNewArtCont {
@@ -76,7 +76,7 @@ body {
 }
 
 #slogan {
-	align-self: flex-start;
+	align-self: flex-end;
 	font-size: 1.5rem;
 	letter-spacing: 6px;
 	text-align: center;
@@ -89,5 +89,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	box-shadow: 1px 2px 3px 6px #000000;
+	border-top: 2px solid black;
+	letter-spacing: 3px;
 }
