@@ -5,16 +5,15 @@
 		<h1><%= @article.title %></h1>
 
 		<p><%= @article.body %></p>
+		<div id="articleControls">
+			<%= link_to "Back", root_path %>
+			<%= link_to "Edit", edit_article_path(@article) %></li>
+			<%= link_to "Delete", article_path(@article), data: {
+							  turbo_method: :delete, 
+							  turbo_confirm: "Are you sure?"
+							} %>
+		</div>	
 	</div>
-	<div id="articleControls">
-		<%= link_to "Edit", edit_article_path(@article) %></li>
-		<%= link_to "Delete", article_path(@article), data: {
-						  turbo_method: :delete, 
-						  turbo_confirm: "Are you sure?"
-						} %>
-		<%= link_to "Back", root_path %>
-	</div>
-	
 	<div id="commentsCont">
 		<h2>Comments</h2>
 		<% if @article.comments.empty? %>
