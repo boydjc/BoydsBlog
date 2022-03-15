@@ -30,7 +30,7 @@
 
 #totArtDis {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 	padding: 30px;
 	gap: 30px;
 }
@@ -39,7 +39,7 @@
 	border: 1px solid black;
 	border-radius: 10px;
 	display: grid;
-	grid-template-rows: 2fr 4fr 1fr;
+	grid-template-rows: 2fr 2fr 1fr;
 	padding: 20px;
 	box-shadow: 0px 1px 3px 1px #003049;
 	background-color: #F9FAEF;
@@ -90,7 +90,7 @@
 
 #showCont {
 	display: grid;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 0.5fr;
 }
 
 #articleCont {
@@ -101,6 +101,7 @@
 
 #articleCont h1 {
 	font-size: 3rem;
+	padding-bottom: 20px;
 }	
 
 #articleCont p {
@@ -140,10 +141,6 @@
 	background-color: #FCBF49;
 	color: #003049;
 	box-shadow: 0px 0px 1px #FCBF49;
-}
-
-#commentsCont {
-	border: 2px solid green;
 }
 
 /* END things on the show page */
