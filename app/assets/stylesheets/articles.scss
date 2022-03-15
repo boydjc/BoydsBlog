@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+/* BEGIN Things on the index page */
+#indexCont {
+	display: grid;
+	grid-template-rows: 1fr 4fr;
+	background-color: #EAE2B7;
+	color: #003049;
+}
+
 #totArtInfo {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
@@ -67,6 +75,7 @@
 	transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
 	flex: 1;
 	text-align: center;
+	align-self: center;
 }
 
 .readButton a:hover {
@@ -74,3 +83,5 @@
 	color: #003049;
 	box-shadow: 1px 1px 1px #EBF8FF;
 }
+
+/* END things on the index page */

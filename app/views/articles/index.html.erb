@@ -1,32 +1,34 @@
 <%= render "banner" %>
 
-<div id="totArtInfo">
-	<h2>Our blog has <%= Article.public_count %> articles and counting!</h3>
-	<h1>Articles</h1>
-</div>
+<div id="indexCont">
+	<div id="totArtInfo">
+		<h2>Our blog has <%= Article.public_count %> articles and counting!</h2>
+		<h1>Articles</h1>
+	</div>
 
-<div id="totArtDis">
-	<% @articles.each do |article| %>
-	  	<% unless article.archived? %>
-			<div class="articlePreview">
-				<div class="articleTitle">
-					<h1><%= article.title %></h1>
+	<div id="totArtDis">
+		<% @articles.each do |article| %>
+			<% unless article.archived? %>
+				<div class="articlePreview">
+					<div class="articleTitle">
+						<h1><%= article.title %></h1>
+					</div>
+					<div class="articleBodyPreview">
+						<p>
+							<% if article.body.length < 100 %>
+								<%= article.body %>
+							<% else %>
+								<%= article.body[..100] + "..." %>
+							<% end %>
+						</p>
+					</div>
+					<div class="readButton">
+						<%= link_to "Read", article %>
+					</div>
 				</div>
-				<div class="articleBodyPreview">
-					<p>
-						<% if article.body.length < 100 %>
-							<%= article.body %>
-						<% else %>
-							<%= article.body[..100] + "..." %>
-						<% end %>
-					</p>
-				</div>
-				<div class="readButton">
-					<%= link_to "Read", article %>
-				</div>
-			</div>
-	  	<% end %>
-	<% end %>
+			<% end %>
+		<% end %>
+	</div>
 </div>
 
 <%= render "footer" %>
