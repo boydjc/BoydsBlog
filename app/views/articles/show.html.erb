@@ -1,25 +1,31 @@
 <%= render "banner" %>
 
-<h1><%= @article.title %></h1>
+<div id="showCont">
+	<div id="articleCont">
+		<h1><%= @article.title %></h1>
 
-<p><%= @article.body %></p>
+		<p><%= @article.body %></p>
+	</div>
+	<div id="articleControls">
+		<%= link_to "Edit", edit_article_path(@article) %></li>
+		<%= link_to "Delete", article_path(@article), data: {
+						  turbo_method: :delete, 
+						  turbo_confirm: "Are you sure?"
+						} %>
+		<%= link_to "Back", root_path %>
+	</div>
+	
+	<div id="commentsCont">
+		<h2>Comments</h2>
+		<% if @article.comments.empty? %>
+			<p>There are none. Add one today!</p>
+		<% else %>
+			<%= render @article.comments %>
+		<% end %>
 
-<ul>
-	<li><%= link_to "Edit", edit_article_path(@article) %></li>
-	<li><%= link_to "Delete", article_path(@article), data: {
-					  turbo_method: :delete, 
-					  turbo_confirm: "Are you sure?"
-					} %></li>
-	<li><%= link_to "Back", root_path %></li>
+		<h2>Add a comment</h2>
+		<%= render 'comments/form' %>
+	</div>
+</div>
 
-</ul>
-
-<h2>Comments</h2>
-<% if @article.comments.empty? %>
-	<p>There are none. Add one today!</p>
-<% else %>
-	<%= render @article.comments %>
-<% end %>
-
-<h2>Add a comment</h2>
-<%= render 'comments/form' %>
+<%= render "footer" %>
