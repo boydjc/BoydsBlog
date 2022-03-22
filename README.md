@@ -1,24 +1,19 @@
-# README
+# RailsBlog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This was a project done to learn the basics of Ruby on Rails. It includes a blog home page that displayed written articles, as well as a system for readers to comment on an article.
 
-Things you may want to cover:
+## Home page
+<p align="center">
+  <img src="https://raw.githubusercontent.com/boydjc/RailsBlog/master/HomeScreenshot.png">
+</p>
 
-* Ruby version
+## Article Page
+<p align="center">
+  <img src="https://raw.githubusercontent.com/boydjc/RailsBlog/master/ShowScreenshot.png">
+</p>
 
-* System dependencies
+## Comments Section
+<p align="center">
+  <img src="https://raw.githubusercontent.com/boydjc/RailsBlog/master/CommentsScreenshot.png">
+</p>
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
