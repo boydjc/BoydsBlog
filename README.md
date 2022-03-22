@@ -2,7 +2,7 @@
 
 This was a project done to learn the basics of Ruby on Rails. It includes a blog home page that displayed written articles, as well as a system for readers to comment on an article.
 
-<i>Best security practices were not addressed in this project and users can create articles using the hardcoded username: 'admin' password: 'password'.</i>
+<i>Best security practices were not addressed in this project and users can create articles using the hardcoded <strong>username: 'admin' password: 'password'.</strong></i>
 
 ## Home page
 <p align="center">
