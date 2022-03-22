@@ -1,4 +1,4 @@
-# RailsBlog
+# BoydsBlog
 
 This was a project done to learn the basics of Ruby on Rails. It includes a blog home page that displayed written articles, as well as a system for readers to comment on an article.
 
