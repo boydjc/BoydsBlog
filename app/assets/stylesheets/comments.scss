@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 #commentsCont {
-	border: 1px solid #000;
+	border-top: 1px solid #000;
 	padding: 30px 60px 60px 80px;
 	display: flex;
 	flex-direction: column;
@@ -34,6 +34,7 @@
 	color: #F77F00;
 	font-weight: bold;
 	padding: 0.6rem 0.3rem 0.3rem 0.3rem;
+	transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 
 .comment a:hover {

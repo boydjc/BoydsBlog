@@ -47,6 +47,11 @@ body {
 	text-shadow: 2px 2px #000000;
 }
 
+#siteName a {
+	text-decoration: none;
+	color: #FFF;
+}
+
 #sloganNewArtCont {
 	flex: 2;
 	display: flex;
