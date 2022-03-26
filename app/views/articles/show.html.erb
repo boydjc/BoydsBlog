@@ -21,7 +21,7 @@
 	<div id="commentsCont">
 		<h2>Comments</h2>
 		<% if @article.comments.empty? %>
-			<p>There are none. Add one today!</p>
+			<p id="noCommentMsg">There are none. Add one today!</p>
 		<% else %>
 			<%= render @article.comments %>
 		<% end %>
